@@ -1,0 +1,367 @@
+/* Globale Stile ist die CSS-Datei für die HTML Datei services*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: rgb(214, 210, 210);
+    background-color: #1f1d1d;
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+
+  
+}
+
+header {
+    background-color: #333;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+    background: transparent;
+    color: #fff;
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2, h3, h4, h5{
+    margin-bottom: 10px;
+    font-size: px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+  
+}
+
+h1 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 31px;
+    font-weight: bold;
+  }
+  
+
+  li span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    
+}
+  h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(6, 52, 104);
+  }
+  
+  h2 {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 31px;
+    font-weight: bold;
+  }
+  
+  h3 {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+    font-size: 31px;
+    font-weight: bold;
+  }
+
+   h4 {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+    font-size: 31px;
+    font-weight: bold;
+   }
+
+    h5 {
+      display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+    font-size: 31px;
+    font-weight: bold;
+    }
+
+
+  p{
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+    font-family:'Courier New', Courier, monospace
+  }
+
+  
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+li img {
+    max-width: 100%;
+    height: auto;
+}
+
+li span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    
+}
+
+li:hover span {
+    opacity: 1;
+}
+
+a {
+    color: rgb(202, 199, 199);
+    text-decoration: black;
+    border-bottom: 1px solid rgb(6, 52, 104);
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    background: transparent;
+}
+
+nav {
+    
+    height: 60px;
+    width:  100%;;
+  }
+  
+  nav ul {
+    list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  height: 80px;
+  padding: 0 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  }
+  
+  nav li {
+    position: relative;
+  }
+  
+  nav a {
+    display: block;
+    padding: 0 20px;
+    line-height: 80px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #9176f3;
+  }
+  
+  nav li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #9176f3;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+  
+  nav li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  hr {
+    width: 100%;
+    height: 2px;
+    color: rgb(202, 199, 199);
+    margin-bottom: 10px;
+   
+  }
+  
+/*======= Google fonts =======*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*======= Main CSS =======*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*======= Cursor click animation =======*/
+.cursor{
+  z-index: 99999;
+  position: fixed;
+}
+
+.cursor .click-animation{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor .click-animation .shape{
+  position: absolute;
+  opacity: 0;
+}
+
+/*======= Circles =======*/
+.cursor .click-animation .shape.circle.big{
+  width: 40px;
+  height: 40px;
+  border: 2px solid #4fb4f8;
+  border-radius: 50%;
+}
+
+.cursor .click-animation .shape.circle.small{
+  width: 20px;
+  height: 20px;
+  border: 1px solid #2ca8fa;
+  border-radius: 50%;
+}
+
+.cursor.active .click-animation .shape.circle{
+  animation: click-animation-circle 3s ease-out infinite;
+}
+
+@keyframes click-animation-circle{
+  0%{
+    opacity: 0;
+  }
+  5%{
+    opacity: 1;
+  }
+  30%{
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+
+/*======= Triangles =======*/
+.cursor .click-animation .shape.triangle.yellow{
+  border-style: solid;
+  border-width: 0 5px 10px 5px;
+  border-color: transparent transparent #d563f8 transparent;
+}
+
+.cursor.active .click-animation .shape.triangle.yellow{
+  animation: click-animation-triangle-yellow 3s ease-out infinite;
+}
+
+@keyframes click-animation-triangle-yellow{
+  0%{
+    opacity: 0;
+  }
+  5%{
+    opacity: 1;
+  }
+  40%{
+    opacity: 0;
+    transform: scale(2.5) translate(50px, -50px) rotate(360deg);
+  }
+}
+
+.cursor .click-animation .shape.triangle.green{
+  border-style: solid;
+  border-width: 0 3.5px 7px 3.5px;
+  border-color: transparent transparent #d563f8 transparent;
+}
+
+.cursor.active .click-animation .shape.triangle.green{
+  animation: click-animation-triangle-green 3s ease-out infinite;
+}
+
+@keyframes click-animation-triangle-green{
+  0%{
+    opacity: 0;
+  }
+  5%{
+    opacity: 1;
+  }
+  40%{
+    opacity: 0;
+    transform: scale(2.5) translate(20px, 50px) rotate(360deg);
+  }
+}
+
+/*======= Disc =======*/
+.cursor .click-animation .shape.disc{
+  width: 8.5px;
+  height: 8.5px;
+  background: #d563f8;
+  border-radius: 50%;
+}
+
+.cursor.active .click-animation .shape.disc{
+  animation: click-animation-disc 3s ease-out infinite;
+}
+
+@keyframes click-animation-disc{
+  0%{
+    opacity: 0;
+  }
+  5%{
+    opacity: 1;
+  }
+  40%{
+    opacity: 0;
+    transform: scale(2) translate(-70px, -30px);
+  }
+}
